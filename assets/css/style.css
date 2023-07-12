@@ -3,10 +3,9 @@
 }
 
 header {
-    background: linear-gradient(to right, #232367, #0323f8, #232367);
-    color: red;
+    background: linear-gradient(to right, #08272e, #4d9fb5, #08272e);
+    color: white;
     text-align: center;
-    background-color: rgb(16, 22, 71);
     padding: 10px;
   }
   

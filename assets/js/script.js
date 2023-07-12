@@ -46,6 +46,7 @@ function getData (cityInput) {
         cityBlock.appendChild(humid).className = "humidity";
         cityBlock.appendChild(wind).className = "windspeed";
         cityBlock.appendChild(uv).className = "uv";
+        cityBlock.style = "color: teal; border: 2px solid teal; border-radius: 5px; padding: 10px";
         uv.textContent = "UV Index: ";
         uv.appendChild(uvBtn).className = "btn";
         city.textContent = data.name + " (" + timeNow.format("MM/DD/YY") + ")";
@@ -101,7 +102,7 @@ function getData (cityInput) {
               var dayP2 = document.createElement("p");
 
               forecastCard.appendChild(dayS1);
-              dayS1.className ="card bg-primary";
+              dayS1.className ="card bg-info";
               dayS1.style = "width:10rem padding:20px";
               dayS1.dataset.day = "day"+[i+1];
               dayS1.appendChild(dayS2).className ="card-body py-1";
@@ -167,7 +168,7 @@ function recents () {
 
     var liN1 = document.createElement("li");
 
-    inputTarget.appendChild(liN1).className = "btn btn-outline-primary btn-block";
+    inputTarget.appendChild(liN1).className = "btn btn-outline-info btn-block";
     liN1.textContent = cityRecents[i];
   }
 }
